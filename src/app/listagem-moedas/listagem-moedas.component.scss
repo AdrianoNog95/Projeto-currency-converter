@@ -1,0 +1,112 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.breadcrumbs .page-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.breadcrumb-nav {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-nav li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumb-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Seção Principal */
+.section {
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Card Header */
+.card-header h1 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Search Container */
+.search-container {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.search-input {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Tabela */
+.table-container {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Paginador */
+.mat-paginator {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .search-input {
+        width: 100%;
+    }
+    
+    .card-header h1 {
+        font-size: 1.1rem;
+    }
+}

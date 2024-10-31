@@ -1,0 +1,28 @@
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <h1 class="page-title">Histórico de Conversões</h1>
+    <ul class="breadcrumb-nav">
+        <li><a routerLink="/pagina-inicial">Página Inicial</a></li>
+        <li>Histórico de Conversões</li>
+    </ul>
+</div>
+
+<section class="section history">
+    <h3>Histórico de Conversões</h3>
+    <button *ngIf="historico.length > 0" class="clear-history-btn" (click)="limparHistorico()">
+        Limpar Histórico
+    </button>
+
+    <div *ngIf="historico.length > 0">
+        <div *ngFor="let item of historico; let i = index" class="conversion-card">
+            <div class="conversion-date">{{ item.data }} às {{ item.hora }}</div>
+            <div>
+                {{ item.valor | number:'1.2-2' }} {{ item.moedaOrigem }}
+                <span>→</span>
+                {{ item.resultado | number:'1.2-2' }} {{ item.moedaDestino }}
+            </div>
+            <div class="exchange-rate">Taxa: {{ item.taxa | number:'1.4-4' }}</div>
+            <button (click)="excluirConversao(i)" class="btn-excluir">Excluir</button>
+        </div>
+    </div>
+</section>
